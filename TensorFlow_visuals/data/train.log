@@ -1,0 +1,242 @@
+2022-03-31 10:11:16,807:INFO: Using config: {'_model_dir': './models/base_model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 35, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 1, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_checkpoint_save_graph_def': True, '_service': None, '_cluster_spec': ClusterSpec({}), '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+2022-03-31 10:11:16,817:WARNING: From /data/MLIO/workloads/u3d_tf/envtf/lib/python3.8/site-packages/tensorflow/python/training/training_util.py:396: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+2022-03-31 10:11:17,823:WARNING: From /data/MLIO/workloads/u3d_tf/src/data_utils.py:210: calling DatasetV2.from_generator (from tensorflow.python.data.ops.dataset_ops) with output_types is deprecated and will be removed in a future version.
+Instructions for updating:
+Use output_signature instead
+2022-03-31 10:11:17,823:WARNING: From /data/MLIO/workloads/u3d_tf/src/data_utils.py:210: calling DatasetV2.from_generator (from tensorflow.python.data.ops.dataset_ops) with output_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+Use output_signature instead
+2022-03-31 10:11:17,846:WARNING: From /data/MLIO/workloads/u3d_tf/envtf/lib/python3.8/site-packages/tensorflow/python/data/ops/iterator_ops.py:362: Iterator.output_types (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.data.get_output_types(iterator)`.
+2022-03-31 10:11:17,846:WARNING: From /data/MLIO/workloads/u3d_tf/envtf/lib/python3.8/site-packages/tensorflow/python/data/ops/iterator_ops.py:363: Iterator.output_shapes (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.data.get_output_shapes(iterator)`.
+2022-03-31 10:11:17,846:WARNING: From /data/MLIO/workloads/u3d_tf/envtf/lib/python3.8/site-packages/tensorflow/python/data/ops/iterator_ops.py:365: Iterator.output_classes (from tensorflow.python.data.ops.iterator_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.data.get_output_classes(iterator)`.
+2022-03-31 10:11:17,847:INFO: Calling model_fn.
+2022-03-31 10:11:17,892:WARNING: From /data/MLIO/workloads/u3d_tf/envtf/lib/python3.8/site-packages/keras/layers/normalization/batch_normalization.py:532: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2022-03-31 10:11:17,897:INFO: conv1: (None, 32, 128, 128, 32)
+2022-03-31 10:11:17,922:INFO: conv2: (None, 32, 128, 128, 64)
+2022-03-31 10:11:17,925:INFO: maxpool layer: (None, 16, 64, 64, 64)
+2022-03-31 10:11:17,950:INFO: conv1: (None, 16, 64, 64, 64)
+2022-03-31 10:11:17,975:INFO: conv2: (None, 16, 64, 64, 128)
+2022-03-31 10:11:17,978:INFO: maxpool layer: (None, 8, 32, 32, 128)
+2022-03-31 10:11:18,003:INFO: conv1: (None, 8, 32, 32, 128)
+2022-03-31 10:11:18,029:INFO: conv2: (None, 8, 32, 32, 256)
+2022-03-31 10:11:18,032:INFO: maxpool layer: (None, 4, 16, 16, 256)
+2022-03-31 10:11:18,058:INFO: conv1: (None, 4, 16, 16, 256)
+2022-03-31 10:11:18,085:INFO: conv2: (None, 4, 16, 16, 512)
+2022-03-31 10:11:18,113:INFO: upconv layer: (None, 8, 32, 32, 512)
+2022-03-31 10:11:18,113:INFO: concat layer: (None, 8, 32, 32, 256)
+2022-03-31 10:11:18,141:INFO: up_conv layer1: (None, 8, 32, 32, 256)
+2022-03-31 10:11:18,169:INFO: up_conv layer2 : (None, 8, 32, 32, 256)
+2022-03-31 10:11:18,185:INFO: upconv layer: (None, 16, 64, 64, 256)
+2022-03-31 10:11:18,185:INFO: concat layer: (None, 16, 64, 64, 128)
+2022-03-31 10:11:18,214:INFO: up_conv layer1: (None, 16, 64, 64, 128)
+2022-03-31 10:11:18,242:INFO: up_conv layer2 : (None, 16, 64, 64, 128)
+2022-03-31 10:11:18,258:INFO: upconv layer: (None, 32, 128, 128, 128)
+2022-03-31 10:11:18,258:INFO: concat layer: (None, 32, 128, 128, 64)
+2022-03-31 10:11:18,288:INFO: up_conv layer1: (None, 32, 128, 128, 64)
+2022-03-31 10:11:18,317:INFO: up_conv layer2 : (None, 32, 128, 128, 64)
+2022-03-31 10:11:18,329:DEBUG: output layer:: (None, 32, 128, 128, 3)
+2022-03-31 10:11:19,006:INFO: Done calling model_fn.
+2022-03-31 10:11:19,007:INFO: Create CheckpointSaverHook.
+2022-03-31 10:11:19,351:INFO: Graph was finalized.
+2022-03-31 10:11:19,822:INFO: Running local_init_op.
+2022-03-31 10:11:19,856:INFO: Done running local_init_op.
+2022-03-31 10:11:20,576:INFO: Calling checkpoint listeners before saving checkpoint 0...
+2022-03-31 10:11:20,578:INFO: Saving checkpoints for 0 into ./models/base_model/model.ckpt.
+2022-03-31 10:11:21,041:INFO: Calling checkpoint listeners after saving checkpoint 0...
+2022-03-31 10:12:43,971:INFO: loss = 0.3020449, step = 0
+2022-03-31 10:14:09,631:INFO: global_step/sec: 0.011674
+2022-03-31 10:14:09,632:INFO: loss = 0.15021431, step = 1 (85.661 sec)
+2022-03-31 10:15:25,109:INFO: global_step/sec: 0.0132489
+2022-03-31 10:15:25,110:INFO: loss = 0.15660408, step = 2 (75.478 sec)
+2022-03-31 10:16:36,186:INFO: global_step/sec: 0.0140692
+2022-03-31 10:16:36,187:INFO: loss = 0.08605207, step = 3 (71.077 sec)
+2022-03-31 10:17:52,490:INFO: global_step/sec: 0.0131056
+2022-03-31 10:17:52,490:INFO: loss = 0.030576607, step = 4 (76.303 sec)
+2022-03-31 10:19:03,093:INFO: global_step/sec: 0.0141637
+2022-03-31 10:19:03,093:INFO: loss = 0.06096884, step = 5 (70.603 sec)
+2022-03-31 10:20:14,791:INFO: global_step/sec: 0.0139473
+2022-03-31 10:20:14,792:INFO: loss = 0.033282563, step = 6 (71.699 sec)
+2022-03-31 10:21:25,452:INFO: global_step/sec: 0.0141521
+2022-03-31 10:21:25,453:INFO: loss = 0.03523389, step = 7 (70.661 sec)
+2022-03-31 10:22:35,651:INFO: global_step/sec: 0.0142452
+2022-03-31 10:22:35,652:INFO: loss = 0.036524538, step = 8 (70.199 sec)
+2022-03-31 10:23:46,141:INFO: global_step/sec: 0.0141865
+2022-03-31 10:23:46,141:INFO: loss = 0.06040883, step = 9 (70.490 sec)
+2022-03-31 10:24:58,948:INFO: global_step/sec: 0.0137349
+2022-03-31 10:24:58,948:INFO: loss = 0.071163654, step = 10 (72.807 sec)
+2022-03-31 10:26:12,998:INFO: global_step/sec: 0.0135043
+2022-03-31 10:26:12,999:INFO: loss = 0.08067787, step = 11 (74.050 sec)
+2022-03-31 10:27:24,319:INFO: global_step/sec: 0.0140213
+2022-03-31 10:27:24,319:INFO: loss = 0.027905524, step = 12 (71.320 sec)
+2022-03-31 10:28:35,282:INFO: global_step/sec: 0.0140918
+2022-03-31 10:28:35,282:INFO: loss = 0.044878762, step = 13 (70.963 sec)
+2022-03-31 10:29:47,211:INFO: global_step/sec: 0.0139025
+2022-03-31 10:29:47,212:INFO: loss = 0.030852597, step = 14 (71.929 sec)
+2022-03-31 10:30:57,971:INFO: global_step/sec: 0.0141324
+2022-03-31 10:30:57,971:INFO: loss = 0.03663369, step = 15 (70.760 sec)
+2022-03-31 10:32:09,639:INFO: global_step/sec: 0.0139533
+2022-03-31 10:32:09,639:INFO: loss = 0.036338884, step = 16 (71.668 sec)
+2022-03-31 10:33:18,942:INFO: global_step/sec: 0.0144294
+2022-03-31 10:33:18,942:INFO: loss = 0.07992309, step = 17 (69.303 sec)
+2022-03-31 10:34:29,561:INFO: global_step/sec: 0.0141604
+2022-03-31 10:34:29,562:INFO: loss = 0.08521044, step = 18 (70.620 sec)
+2022-03-31 10:35:40,840:INFO: global_step/sec: 0.0140294
+2022-03-31 10:35:40,841:INFO: loss = 0.03487365, step = 19 (71.279 sec)
+2022-03-31 10:36:51,121:INFO: global_step/sec: 0.0142285
+2022-03-31 10:36:51,122:INFO: loss = 0.026119972, step = 20 (70.281 sec)
+2022-03-31 10:38:02,702:INFO: global_step/sec: 0.0139702
+2022-03-31 10:38:02,703:INFO: loss = 0.05196194, step = 21 (71.581 sec)
+2022-03-31 10:39:13,235:INFO: global_step/sec: 0.0141778
+2022-03-31 10:39:13,235:INFO: loss = 0.09708733, step = 22 (70.533 sec)
+2022-03-31 10:40:25,113:INFO: global_step/sec: 0.0139124
+2022-03-31 10:40:25,114:INFO: loss = 0.024735369, step = 23 (71.879 sec)
+2022-03-31 10:41:36,540:INFO: global_step/sec: 0.0140003
+2022-03-31 10:41:36,541:INFO: loss = 0.028778216, step = 24 (71.427 sec)
+2022-03-31 10:42:45,834:INFO: global_step/sec: 0.0144314
+2022-03-31 10:42:45,834:INFO: loss = 0.035029486, step = 25 (69.293 sec)
+2022-03-31 10:43:54,872:INFO: global_step/sec: 0.0144847
+2022-03-31 10:43:54,872:INFO: loss = 0.02538985, step = 26 (69.038 sec)
+2022-03-31 10:45:03,610:INFO: global_step/sec: 0.0145481
+2022-03-31 10:45:03,610:INFO: loss = 0.037817314, step = 27 (68.738 sec)
+2022-03-31 10:46:12,928:INFO: global_step/sec: 0.0144262
+2022-03-31 10:46:12,928:INFO: loss = 0.04971715, step = 28 (69.318 sec)
+2022-03-31 10:47:23,235:INFO: global_step/sec: 0.0142232
+2022-03-31 10:47:23,236:INFO: loss = 0.048165616, step = 29 (70.308 sec)
+2022-03-31 10:48:31,647:INFO: global_step/sec: 0.0146174
+2022-03-31 10:48:31,647:INFO: loss = 0.023180168, step = 30 (68.411 sec)
+2022-03-31 10:49:41,495:INFO: global_step/sec: 0.0143168
+2022-03-31 10:49:41,495:INFO: loss = 0.029172394, step = 31 (69.848 sec)
+2022-03-31 10:50:50,866:INFO: global_step/sec: 0.0144151
+2022-03-31 10:50:50,867:INFO: loss = 0.024871696, step = 32 (69.372 sec)
+2022-03-31 10:52:01,269:INFO: global_step/sec: 0.014204
+2022-03-31 10:52:01,270:INFO: loss = 0.06535693, step = 33 (70.403 sec)
+2022-03-31 10:53:10,900:INFO: Calling checkpoint listeners before saving checkpoint 35...
+2022-03-31 10:53:10,901:INFO: Saving checkpoints for 35 into ./models/base_model/model.ckpt.
+2022-03-31 10:53:11,233:INFO: Calling checkpoint listeners after saving checkpoint 35...
+2022-03-31 10:53:11,234:INFO: global_step/sec: 0.0142928
+2022-03-31 10:53:11,234:INFO: loss = 0.022812676, step = 34 (69.965 sec)
+2022-03-31 10:54:20,769:INFO: global_step/sec: 0.0143812
+2022-03-31 10:54:20,770:INFO: loss = 0.020779688, step = 35 (69.536 sec)
+2022-03-31 10:55:30,165:INFO: global_step/sec: 0.0144102
+2022-03-31 10:55:30,165:INFO: loss = 0.029218376, step = 36 (69.395 sec)
+2022-03-31 10:56:39,416:INFO: global_step/sec: 0.0144401
+2022-03-31 10:56:39,417:INFO: loss = 0.023510598, step = 37 (69.251 sec)
+2022-03-31 10:57:51,574:INFO: global_step/sec: 0.0138585
+2022-03-31 10:57:51,574:INFO: loss = 0.019223938, step = 38 (72.158 sec)
+2022-03-31 10:59:01,407:INFO: global_step/sec: 0.0143199
+2022-03-31 10:59:01,407:INFO: loss = 0.054122332, step = 39 (69.833 sec)
+2022-03-31 11:00:13,383:INFO: global_step/sec: 0.0138935
+2022-03-31 11:00:13,383:INFO: loss = 0.037315343, step = 40 (71.976 sec)
+2022-03-31 11:01:23,217:INFO: global_step/sec: 0.0143196
+2022-03-31 11:01:23,218:INFO: loss = 0.020756433, step = 41 (69.834 sec)
+2022-03-31 11:02:32,985:INFO: global_step/sec: 0.0143332
+2022-03-31 11:02:32,986:INFO: loss = 0.02421211, step = 42 (69.768 sec)
+2022-03-31 11:03:42,828:INFO: global_step/sec: 0.0143179
+2022-03-31 11:03:42,828:INFO: loss = 0.03302142, step = 43 (69.843 sec)
+2022-03-31 11:04:51,509:INFO: global_step/sec: 0.0145601
+2022-03-31 11:04:51,509:INFO: loss = 0.028279377, step = 44 (68.681 sec)
+2022-03-31 11:06:00,497:INFO: global_step/sec: 0.0144953
+2022-03-31 11:06:00,497:INFO: loss = 0.018642168, step = 45 (68.988 sec)
+2022-03-31 11:07:08,644:INFO: global_step/sec: 0.014674
+2022-03-31 11:07:08,645:INFO: loss = 0.022552442, step = 46 (68.148 sec)
+2022-03-31 11:08:17,474:INFO: global_step/sec: 0.0145285
+2022-03-31 11:08:17,475:INFO: loss = 0.041893836, step = 47 (68.830 sec)
+2022-03-31 11:09:26,790:INFO: global_step/sec: 0.0144268
+2022-03-31 11:09:26,790:INFO: loss = 0.026108615, step = 48 (69.315 sec)
+2022-03-31 11:10:36,958:INFO: global_step/sec: 0.0142515
+2022-03-31 11:10:36,958:INFO: loss = 0.044268496, step = 49 (70.168 sec)
+2022-03-31 11:11:47,330:INFO: global_step/sec: 0.0142102
+2022-03-31 11:11:47,330:INFO: loss = 0.018773016, step = 50 (70.372 sec)
+2022-03-31 11:12:58,322:INFO: global_step/sec: 0.014086
+2022-03-31 11:12:58,323:INFO: loss = 0.027849555, step = 51 (70.992 sec)
+2022-03-31 11:14:08,417:INFO: global_step/sec: 0.0142665
+2022-03-31 11:14:08,417:INFO: loss = 0.018937223, step = 52 (70.094 sec)
+2022-03-31 11:15:18,716:INFO: global_step/sec: 0.0142249
+2022-03-31 11:15:18,716:INFO: loss = 0.04944195, step = 53 (70.299 sec)
+2022-03-31 11:16:28,853:INFO: global_step/sec: 0.0142578
+2022-03-31 11:16:28,854:INFO: loss = 0.023006443, step = 54 (70.137 sec)
+2022-03-31 11:17:39,448:INFO: global_step/sec: 0.0141653
+2022-03-31 11:17:39,449:INFO: loss = 0.022476196, step = 55 (70.595 sec)
+2022-03-31 11:18:47,575:INFO: global_step/sec: 0.0146785
+2022-03-31 11:18:47,575:INFO: loss = 0.01820454, step = 56 (68.127 sec)
+2022-03-31 11:19:54,895:INFO: global_step/sec: 0.0148544
+2022-03-31 11:19:54,896:INFO: loss = 0.036428384, step = 57 (67.320 sec)
+2022-03-31 11:21:03,243:INFO: global_step/sec: 0.0146311
+2022-03-31 11:21:03,243:INFO: loss = 0.021125875, step = 58 (68.348 sec)
+2022-03-31 11:22:14,036:INFO: global_step/sec: 0.0141257
+2022-03-31 11:22:14,036:INFO: loss = 0.048803095, step = 59 (70.793 sec)
+2022-03-31 11:23:24,878:INFO: global_step/sec: 0.0141158
+2022-03-31 11:23:24,879:INFO: loss = 0.027407965, step = 60 (70.843 sec)
+2022-03-31 11:24:34,070:INFO: global_step/sec: 0.0144526
+2022-03-31 11:24:34,070:INFO: loss = 0.02132619, step = 61 (69.192 sec)
+2022-03-31 11:25:43,543:INFO: global_step/sec: 0.0143941
+2022-03-31 11:25:43,543:INFO: loss = 0.022528654, step = 62 (69.473 sec)
+2022-03-31 11:26:56,429:INFO: global_step/sec: 0.0137199
+2022-03-31 11:26:56,430:INFO: loss = 0.068979815, step = 63 (72.887 sec)
+2022-03-31 11:28:06,116:INFO: global_step/sec: 0.01435
+2022-03-31 11:28:06,116:INFO: loss = 0.041664224, step = 64 (69.686 sec)
+2022-03-31 11:29:16,006:INFO: global_step/sec: 0.0143082
+2022-03-31 11:29:16,006:INFO: loss = 0.048588894, step = 65 (69.890 sec)
+2022-03-31 11:30:25,249:INFO: global_step/sec: 0.0144418
+2022-03-31 11:30:25,250:INFO: loss = 0.015585278, step = 66 (69.243 sec)
+2022-03-31 11:31:37,876:INFO: global_step/sec: 0.013769
+2022-03-31 11:31:37,877:INFO: loss = 0.02276368, step = 67 (72.627 sec)
+2022-03-31 11:32:48,852:INFO: global_step/sec: 0.0140893
+2022-03-31 11:32:48,853:INFO: loss = 0.034508213, step = 68 (70.976 sec)
+2022-03-31 11:34:00,594:INFO: Calling checkpoint listeners before saving checkpoint 70...
+2022-03-31 11:34:00,594:INFO: Saving checkpoints for 70 into ./models/base_model/model.ckpt.
+2022-03-31 11:34:01,003:INFO: Calling checkpoint listeners after saving checkpoint 70...
+2022-03-31 11:34:01,005:INFO: global_step/sec: 0.0138596
+2022-03-31 11:34:01,005:INFO: loss = 0.024048831, step = 69 (72.152 sec)
+2022-03-31 11:34:01,051:INFO: Loss for final step: 0.024048831.
+2022-03-31 11:34:02,295:INFO: Calling model_fn.
+2022-03-31 11:34:02,316:INFO: conv1: (None, 32, None, None, 32)
+2022-03-31 11:34:02,336:INFO: conv2: (None, 32, None, None, 64)
+2022-03-31 11:34:02,339:INFO: maxpool layer: (None, 16, None, None, 64)
+2022-03-31 11:34:02,360:INFO: conv1: (None, 16, None, None, 64)
+2022-03-31 11:34:02,381:INFO: conv2: (None, 16, None, None, 128)
+2022-03-31 11:34:02,383:INFO: maxpool layer: (None, 8, None, None, 128)
+2022-03-31 11:34:02,404:INFO: conv1: (None, 8, None, None, 128)
+2022-03-31 11:34:02,425:INFO: conv2: (None, 8, None, None, 256)
+2022-03-31 11:34:02,427:INFO: maxpool layer: (None, 4, None, None, 256)
+2022-03-31 11:34:02,449:INFO: conv1: (None, 4, None, None, 256)
+2022-03-31 11:34:02,470:INFO: conv2: (None, 4, None, None, 512)
+2022-03-31 11:34:02,486:INFO: upconv layer: (None, 8, None, None, 512)
+2022-03-31 11:34:02,487:INFO: concat layer: (None, 8, None, None, 256)
+2022-03-31 11:34:02,510:INFO: up_conv layer1: (None, 8, None, None, 256)
+2022-03-31 11:34:02,532:INFO: up_conv layer2 : (None, 8, None, None, 256)
+2022-03-31 11:34:02,548:INFO: upconv layer: (None, 16, None, None, 256)
+2022-03-31 11:34:02,548:INFO: concat layer: (None, 16, None, None, 128)
+2022-03-31 11:34:02,572:INFO: up_conv layer1: (None, 16, None, None, 128)
+2022-03-31 11:34:02,595:INFO: up_conv layer2 : (None, 16, None, None, 128)
+2022-03-31 11:34:02,611:INFO: upconv layer: (None, 32, None, None, 128)
+2022-03-31 11:34:02,611:INFO: concat layer: (None, 32, None, None, 64)
+2022-03-31 11:34:02,636:INFO: up_conv layer1: (None, 32, None, None, 64)
+2022-03-31 11:34:02,661:INFO: up_conv layer2 : (None, 32, None, None, 64)
+2022-03-31 11:34:02,674:DEBUG: output layer:: (None, 32, None, None, 3)
+2022-03-31 11:34:02,781:INFO: Done calling model_fn.
+2022-03-31 11:34:02,794:INFO: Starting evaluation at 2022-03-31T11:34:02
+2022-03-31 11:34:02,891:INFO: Graph was finalized.
+2022-03-31 11:34:02,891:INFO: Restoring parameters from ./models/base_model/model.ckpt-70
+2022-03-31 11:34:03,028:INFO: Running local_init_op.
+2022-03-31 11:34:03,053:INFO: Done running local_init_op.
+2022-03-31 11:35:13,215:INFO: Inference Time : 70.42094s
+2022-03-31 11:35:13,216:INFO: Finished evaluation at 2022-03-31-11:35:13
+2022-03-31 11:35:13,216:INFO: Saving dict for global step 70: global_step = 70, iou = 0.0042169983, loss = 38.29656
+2022-03-31 11:35:13,306:INFO: Saving 'checkpoint_path' summary for global step 70: ./models/base_model/model.ckpt-70

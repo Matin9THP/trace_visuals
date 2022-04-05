@@ -1,0 +1,4 @@
+root        1001  0.0  0.0  31952 18508 ?        Ss   Mar10   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1480  0.0  0.0 110504 21140 ?        Ssl  Mar10   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root     3664777  855  1.6 27352540 12803836 pts/11 Sl+ 10:11   2:25 python src/main.py -model_dir ./models/base_model -mode train_eval
+root     3665050  0.0  0.0   9032   656 pts/10   S+   10:11   0:00 grep python
