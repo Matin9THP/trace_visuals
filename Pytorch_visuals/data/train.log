@@ -1,0 +1,164 @@
+2022-03-31 12:05:09,054:INFO: Creating dataloader objects
+2022-03-31 12:05:10,463:INFO: Dataloader objects created
+2022-03-31 12:05:10,463:INFO: next_layer: 1
+2022-03-31 12:05:10,465:INFO: conv1: 4
+2022-03-31 12:05:10,466:INFO: conv1: 8
+2022-03-31 12:05:10,466:INFO: next_layer: 8
+2022-03-31 12:05:10,466:INFO: conv1: 8
+2022-03-31 12:05:10,467:INFO: conv1: 16
+2022-03-31 12:05:10,467:INFO: next_layer: 16
+2022-03-31 12:05:10,467:INFO: conv1: 16
+2022-03-31 12:05:10,467:INFO: conv1: 32
+2022-03-31 12:05:10,468:INFO: next_layer: 32
+2022-03-31 12:05:10,468:INFO: conv1: 32
+2022-03-31 12:05:10,469:INFO: conv1: 64
+2022-03-31 12:05:10,469:INFO: concat_layer input layer: 96
+2022-03-31 12:05:10,470:INFO: concat_layer output layer: 32
+2022-03-31 12:05:10,470:INFO: next_layer_size layer2 : 32
+2022-03-31 12:05:10,470:INFO: concat_layer input layer: 48
+2022-03-31 12:05:10,471:INFO: concat_layer output layer: 16
+2022-03-31 12:05:10,471:INFO: next_layer_size layer2 : 16
+2022-03-31 12:05:10,471:INFO: concat_layer input layer: 24
+2022-03-31 12:05:10,471:INFO: concat_layer output layer: 8
+2022-03-31 12:05:10,472:INFO: next_layer_size layer2 : 8
+2022-03-31 12:05:10,472:INFO: output layer:: 3
+2022-03-31 12:05:10,472:INFO: Starting epoch 0
+2022-03-31 12:05:44,886:INFO: Epoch training loss: 0.9106070280075074
+2022-03-31 12:05:44,887:INFO: Evaluating
+2022-03-31 12:05:46,577:INFO: Val loss: 0.8479926228523255
+2022-03-31 12:05:46,577:INFO: Saving weights
+2022-03-31 12:05:46,577:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:05:46,578:INFO: Saved Weights : ./checkpoints/model_35.pth
+2022-03-31 12:05:46,578:INFO: Starting epoch 1
+2022-03-31 12:06:20,264:INFO: Epoch training loss: 0.7926381809370858
+2022-03-31 12:06:20,264:INFO: Evaluating
+2022-03-31 12:06:21,734:INFO: Val loss: 0.7405572533607483
+2022-03-31 12:06:21,734:INFO: Saving weights
+2022-03-31 12:06:21,734:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:06:21,735:INFO: Saved Weights : ./checkpoints/model_70.pth
+2022-03-31 12:06:21,735:INFO: Starting epoch 2
+2022-03-31 12:06:55,267:INFO: Epoch training loss: 0.6998081173215593
+2022-03-31 12:06:55,268:INFO: Evaluating
+2022-03-31 12:06:56,893:INFO: Val loss: 0.6582853198051453
+2022-03-31 12:06:56,894:INFO: Saving weights
+2022-03-31 12:06:56,894:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:06:56,894:INFO: Saved Weights : ./checkpoints/model_105.pth
+2022-03-31 12:06:56,894:INFO: Starting epoch 3
+2022-03-31 12:07:30,419:INFO: Epoch training loss: 0.62708802989551
+2022-03-31 12:07:30,419:INFO: Evaluating
+2022-03-31 12:07:32,129:INFO: Val loss: 0.5929758191108704
+2022-03-31 12:07:32,129:INFO: Saving weights
+2022-03-31 12:07:32,130:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:07:32,130:INFO: Saved Weights : ./checkpoints/model_140.pth
+2022-03-31 12:07:32,130:INFO: Starting epoch 4
+2022-03-31 12:08:05,278:INFO: Epoch training loss: 0.5712749625955309
+2022-03-31 12:08:05,278:INFO: Evaluating
+2022-03-31 12:08:06,807:INFO: Val loss: 0.5423585653305054
+2022-03-31 12:08:06,807:INFO: Saving weights
+2022-03-31 12:08:06,807:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:08:06,808:INFO: Saved Weights : ./checkpoints/model_175.pth
+2022-03-31 12:08:06,808:INFO: Starting epoch 5
+2022-03-31 12:08:41,237:INFO: Epoch training loss: 0.5250936661447797
+2022-03-31 12:08:41,237:INFO: Evaluating
+2022-03-31 12:08:42,944:INFO: Val loss: 0.5004448354244232
+2022-03-31 12:08:42,944:INFO: Saving weights
+2022-03-31 12:08:42,944:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:08:42,945:INFO: Saved Weights : ./checkpoints/model_210.pth
+2022-03-31 12:08:42,945:INFO: Starting epoch 6
+2022-03-31 12:09:17,696:INFO: Epoch training loss: 0.4883921265602112
+2022-03-31 12:09:17,697:INFO: Evaluating
+2022-03-31 12:09:19,444:INFO: Val loss: 0.46655017137527466
+2022-03-31 12:09:19,444:INFO: Saving weights
+2022-03-31 12:09:19,444:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:09:19,445:INFO: Saved Weights : ./checkpoints/model_245.pth
+2022-03-31 12:09:19,445:INFO: Starting epoch 7
+2022-03-31 12:09:54,439:INFO: Epoch training loss: 0.4567809121949332
+2022-03-31 12:09:54,439:INFO: Evaluating
+2022-03-31 12:09:56,130:INFO: Val loss: 0.43602424263954165
+2022-03-31 12:09:56,130:INFO: Saving weights
+2022-03-31 12:09:56,130:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:09:56,131:INFO: Saved Weights : ./checkpoints/model_280.pth
+2022-03-31 12:09:56,131:INFO: Starting epoch 8
+2022-03-31 12:10:28,827:INFO: Epoch training loss: 0.4300822487899235
+2022-03-31 12:10:28,827:INFO: Evaluating
+2022-03-31 12:10:30,517:INFO: Val loss: 0.40962926149368284
+2022-03-31 12:10:30,517:INFO: Saving weights
+2022-03-31 12:10:30,517:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:10:30,518:INFO: Saved Weights : ./checkpoints/model_315.pth
+2022-03-31 12:10:30,518:INFO: Starting epoch 9
+2022-03-31 12:11:03,911:INFO: Epoch training loss: 0.40834387796265736
+2022-03-31 12:11:03,912:INFO: Evaluating
+2022-03-31 12:11:05,526:INFO: Val loss: 0.3892001688480377
+2022-03-31 12:11:05,526:INFO: Saving weights
+2022-03-31 12:11:05,526:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:11:05,527:INFO: Saved Weights : ./checkpoints/model_350.pth
+2022-03-31 12:11:05,527:INFO: Starting epoch 10
+2022-03-31 12:11:39,130:INFO: Epoch training loss: 0.38655919986111775
+2022-03-31 12:11:39,130:INFO: Evaluating
+2022-03-31 12:11:40,833:INFO: Val loss: 0.36990981101989745
+2022-03-31 12:11:40,833:INFO: Saving weights
+2022-03-31 12:11:40,833:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:11:40,834:INFO: Saved Weights : ./checkpoints/model_385.pth
+2022-03-31 12:11:40,834:INFO: Starting epoch 11
+2022-03-31 12:12:13,904:INFO: Epoch training loss: 0.3696059686797006
+2022-03-31 12:12:13,904:INFO: Evaluating
+2022-03-31 12:12:15,572:INFO: Val loss: 0.3530175179243088
+2022-03-31 12:12:15,572:INFO: Saving weights
+2022-03-31 12:12:15,572:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:12:15,573:INFO: Saved Weights : ./checkpoints/model_420.pth
+2022-03-31 12:12:15,573:INFO: Starting epoch 12
+2022-03-31 12:12:49,684:INFO: Epoch training loss: 0.353551094021116
+2022-03-31 12:12:49,684:INFO: Evaluating
+2022-03-31 12:12:51,349:INFO: Val loss: 0.33571487069129946
+2022-03-31 12:12:51,349:INFO: Saving weights
+2022-03-31 12:12:51,349:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:12:51,350:INFO: Saved Weights : ./checkpoints/model_455.pth
+2022-03-31 12:12:51,350:INFO: Starting epoch 13
+2022-03-31 12:13:25,028:INFO: Epoch training loss: 0.3389054353748049
+2022-03-31 12:13:25,028:INFO: Evaluating
+2022-03-31 12:13:26,700:INFO: Val loss: 0.32185778617858884
+2022-03-31 12:13:26,700:INFO: Saving weights
+2022-03-31 12:13:26,700:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:13:26,701:INFO: Saved Weights : ./checkpoints/model_490.pth
+2022-03-31 12:13:26,701:INFO: Starting epoch 14
+2022-03-31 12:14:00,892:INFO: Epoch training loss: 0.3260891718523843
+2022-03-31 12:14:00,892:INFO: Evaluating
+2022-03-31 12:14:02,599:INFO: Val loss: 0.31048603653907775
+2022-03-31 12:14:02,599:INFO: Saving weights
+2022-03-31 12:14:02,599:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:14:02,600:INFO: Saved Weights : ./checkpoints/model_525.pth
+2022-03-31 12:14:02,600:INFO: Starting epoch 15
+2022-03-31 12:14:36,439:INFO: Epoch training loss: 0.312845082793917
+2022-03-31 12:14:36,439:INFO: Evaluating
+2022-03-31 12:14:38,193:INFO: Val loss: 0.299337238073349
+2022-03-31 12:14:38,193:INFO: Saving weights
+2022-03-31 12:14:38,193:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:14:38,194:INFO: Saved Weights : ./checkpoints/model_560.pth
+2022-03-31 12:14:38,194:INFO: Starting epoch 16
+2022-03-31 12:15:11,815:INFO: Epoch training loss: 0.3028016860995974
+2022-03-31 12:15:11,816:INFO: Evaluating
+2022-03-31 12:15:13,502:INFO: Val loss: 0.2868234783411026
+2022-03-31 12:15:13,502:INFO: Saving weights
+2022-03-31 12:15:13,503:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:15:13,503:INFO: Saved Weights : ./checkpoints/model_595.pth
+2022-03-31 12:15:13,503:INFO: Starting epoch 17
+2022-03-31 12:15:47,571:INFO: Epoch training loss: 0.292127971138273
+2022-03-31 12:15:47,571:INFO: Evaluating
+2022-03-31 12:15:49,088:INFO: Val loss: 0.27816530764102937
+2022-03-31 12:15:49,088:INFO: Saving weights
+2022-03-31 12:15:49,088:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:15:49,089:INFO: Saved Weights : ./checkpoints/model_630.pth
+2022-03-31 12:15:49,089:INFO: Starting epoch 18
+2022-03-31 12:16:22,774:INFO: Epoch training loss: 0.2835984762225832
+2022-03-31 12:16:22,775:INFO: Evaluating
+2022-03-31 12:16:24,518:INFO: Val loss: 0.2672299385070801
+2022-03-31 12:16:24,518:INFO: Saving weights
+2022-03-31 12:16:24,518:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:16:24,519:INFO: Saved Weights : ./checkpoints/model_665.pth
+2022-03-31 12:16:24,519:INFO: Starting epoch 19
+2022-03-31 12:16:57,922:INFO: Epoch training loss: 0.2729989643607821
+2022-03-31 12:16:57,922:INFO: Evaluating
+2022-03-31 12:16:59,667:INFO: Val loss: 0.2586177051067352
+2022-03-31 12:16:59,667:INFO: Saving weights
+2022-03-31 12:16:59,667:INFO: Reached Checkpoint. Saving Weights ...
+2022-03-31 12:16:59,668:INFO: Saved Weights : ./checkpoints/model_700.pth
